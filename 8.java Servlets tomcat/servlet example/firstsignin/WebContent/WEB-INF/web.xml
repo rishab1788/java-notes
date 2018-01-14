@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>firstsignin</display-name>
+  
+	<context-param>
+		<param-name>driver</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>connection</param-name>
+		<param-value>jdbc:mysql://localhost:3306/college</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>adminname</param-name>
+		<param-value>root</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>adminpassword</param-name>
+		<param-value>root</param-value>
+	</context-param>
+ 
+	<servlet>
+		<servlet-name>SignIn</servlet-name>
+		<servlet-class>com.SignIn</servlet-class>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignIn</servlet-name>
+		<url-pattern>/SignIn</url-pattern>
+
+	</servlet-mapping>
+
+ 	<listener>
+		<listener-class>listener.AppContextListener</listener-class>
+	</listener>
+ 
+ <filter>
+		<filter-name>SignInFilter</filter-name>
+		<filter-class>filter.SignInFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>SignInFilter</filter-name>
+		<url-pattern>/SignIn</url-pattern>
+	</filter-mapping>
+
+ 
+ 
+
+
+
+</web-app>

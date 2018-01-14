@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>FirstServlet</display-name>
+
+
+	<context-param>
+		<param-name>global</param-name>
+		<param-value>cmklsdclkmsdmklcsdmklc</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>Online</servlet-name>
+		<servlet-class>com.Online</servlet-class>
+		<!-- init param are used to create variables which can be only used in 
+			specified servlet -->
+		<init-param>
+			<param-name>jdbcdriver</param-name>
+			<param-value>com.jdbc.Driver</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Online</servlet-name>
+		<url-pattern>/Onlinecallme</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>SecondOnline</servlet-name>
+		<servlet-class>com.SecondOnline</servlet-class>
+		<!-- init param are used to create variables which can be only used in 
+			specified servlet -->
+		<init-param>
+			<param-name>oracle</param-name>
+			<param-value>odbc.Driver</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SecondOnline</servlet-name>
+		<url-pattern>/SecondOnlinecallme</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ThirdOnline</servlet-name>
+		<servlet-class>com.ThirdOnline</servlet-class>
+		<!-- init param are used to create variables which can be only used in 
+			specified servlet -->
+		<init-param>
+			<param-name>oracle</param-name>
+			<param-value>odbc.Driver</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ThirdOnline</servlet-name>
+		<url-pattern>/ThirdOnlinecallme</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FourthOnline</servlet-name>
+		<servlet-class>com.FourthOnline</servlet-class>
+		<!-- init param are used to create variables which can be only used in 
+			specified servlet -->
+		<init-param>
+			<param-name>oracle</param-name>
+			<param-value>odbc.Driver</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FourthOnline</servlet-name>
+		<url-pattern>/FourthOnlinecallme</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>LoginLogout</servlet-name>
+		<servlet-class>loginlogout.LoginLogout</servlet-class>
+ 	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginLogout</servlet-name>
+		<url-pattern>/LoginLogoutcallme</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+	<servlet>
+		<servlet-name>FifthOnline</servlet-name>
+		<servlet-class>com.FifthOnline</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FifthOnline</servlet-name>
+		<url-pattern>/FifthOnlinecallme</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>SixthOnline</servlet-name>
+		<servlet-class>httpsessionevent.SixthOnline</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SixthOnline</servlet-name>
+		<url-pattern>/SixthOnlinecallme</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>SeventhOnline</servlet-name>
+		<servlet-class>filter.SeventhOnline</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SeventhOnline</servlet-name>
+		<url-pattern>/SeventhOnlinecallme</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>EightOnline</servlet-name>
+		<servlet-class>filedownload.EightOnline</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EightOnline</servlet-name>
+		<url-pattern>/EightOnlinecallme</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<listener>
+
+		<listener-class>httpsessionevent.HttpSessionListenerTest</listener-class>
+	</listener>
+
+
+	<filter>
+		<filter-name>FilterSeventhOnline</filter-name>
+		<filter-class>filter.FilterSeventhOnline</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>FilterSeventhOnline</filter-name>
+		<url-pattern>/SeventhOnlinecallme</url-pattern>
+	</filter-mapping>
+
+
+</web-app>

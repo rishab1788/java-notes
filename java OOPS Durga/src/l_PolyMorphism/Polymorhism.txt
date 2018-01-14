@@ -1,0 +1,38 @@
+polymorhism -one name but multiple forms is he conecept of polymorphism
+
+example -1- method name is the same but we can apply for diffrent types of arguments ##overloading
+
+Abs(int x)
+Abs(float x)
+Abs (long x)
+
+
+example-2-method signature is same but in parent class one type of implemetnation and in the child class another type of implemenation
+          this concept is overriding
+
+          calss p{
+
+          marrty(int x) {
+
+          //shubh}
+
+          }
+class c
+{
+
+marry(int x) {
+
+//lucky}
+}
+
+
+example -3 -usage of parent class refrence to hold child object is the concept of polymorhism is also concernd as polymorphism
+
+
+ List l= new ArrayList() ;
+
+ List l= new Vector() ;
+
+ List l= new Stack() ;
+
+ List l= new LinkedList() ;

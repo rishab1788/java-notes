@@ -1,0 +1,44 @@
+create database college;
+
+use college;
+
+
+create table student(id int, name char);
+
+
+insert into student values(1, 'cdscs');
+
+
+select * from student;
+
+
+how to add jar file in intellij project. (we want to add connectorj deiver to 
+establish connection  from java code to database.)
+
+
+we have imported jar in our project 
+
+we have investigated the jar and found that their is a package 
+called 
+
+com.mysql.jdbc.Driver (provided by vendor external lib)
+
+
+
+what we have done
+
+1. donwloaded 64bit mysql server(only 40 mb). installed the same. 
+configured the server to run on 3906 port number.
+2. downloaded connectorj driver which is provided by mysql itself.
+3. started mysql command line and created db the used the db then create
+
+table inside db and inserted value in table.
+
+4. then added connectorj mysql jar in project.
+5. and got the code from javatpoint. 
+6. changed the configuration inside code according to our connection.
+7. runthe code
+
+
+
+

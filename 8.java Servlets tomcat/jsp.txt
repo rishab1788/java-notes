@@ -1,0 +1,88 @@
+servlet - 
+jsp -- less coding, abstraction of funcionalit
+
+servlet - 
+
+
+application(code) + server 
+
+java server - tomcat, weblogic, wesphare, glassfish, jboss, jetty.
+
+
+----- HTTP ----
+
+request  -- made by client to server.
+
+
+
+response -- return by server to thier client
+
+
+
+
+
+
+
+
+
+
+
+https://www.google.co.in -- ip, domain name
+
+
+/search - path 
+
+key - value      key - value
+?q=http+protocol&source=lnms --- query param
+
+
+
+get 
+post -add  
+put - update
+delete - want to delete 
+
+x
+
+it is getting the value from request object 
+and setting the values on response object.
+
+
+client - servlet - database
+request - 
+
+
+client will send request.
+server will fetch the parameters from request.db call 
+and server will make the respone.and return to the client.
+
+
+session - login logout.
+
+
+ ----   maven zip file 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
