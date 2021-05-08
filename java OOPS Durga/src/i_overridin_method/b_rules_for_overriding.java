@@ -11,7 +11,7 @@ import java.io.InterruptedIOException;
  */
 class b_rules_for_overriding {
 
-    private Class Rule1//COVAIENT
+    private Class Rule1 //COVAIENT
 
     { //coverient return type can ve usedto overrid method from 1.4 version
         //from 1.5 version covarient return type need not be same as its child type also allowed
@@ -33,8 +33,7 @@ class b_rules_for_overriding {
     }
 
     class rule2 {
-//parent class private method not availvble to the childthat mens overiridng is not aloowed with privatre method
-
+//parent class private method not available to the child that means overiridng is not allowed with private method
 
         class p {
             private Object m1() {
@@ -63,7 +62,7 @@ class b_rules_for_overriding {
 
         }
 
-        class c {
+        class c extends p{
             public String m1() {
                 return null;
             }
@@ -95,7 +94,7 @@ class b_rules_for_overriding {
     }
 
     class rule5 {
-//while overriding we cant reduce the scope of access modifiier but we can increase the scope of access modifier
+//while overriding we cant reduce the scope of access modifier but we can increase the scope of access modifier
 
 //PRIVATE<PROTECTED<default<public
         //CASE1
@@ -108,9 +107,8 @@ class b_rules_for_overriding {
 
         }
 
-        class c {
+        class c extends p{
             void m1()
-
             {
 
             }
@@ -118,7 +116,7 @@ class b_rules_for_overriding {
         }
 
 //CASE2-
-        //its allowed cause we are giveing weaker to stronger
+        //its allowed cause we are giving weaker to stronger
 
         class pa {
             void m1() {
@@ -127,7 +125,7 @@ class b_rules_for_overriding {
 
         }
 
-        class ch {
+        class ch extends pa {
             public void m1()
 
             {
@@ -159,17 +157,17 @@ class b_rules_for_overriding {
 
 
     class rule6 {
-        //checked exeption  and unchecked exeption
+        //checked exception  and unchecked exception
 
-        //there are no restriction in the unchecked exeption
-        //if child class method throws any checked exepetion commpulsory parent class should throw same checked exeption
+        //there are no restriction in the unchecked exception
+        //if child class method throws any checked exception compulsory parent class should throw same checked exception
         //other wise we will get CE error
 
 
         Class p
 
         {
-            public void m1 () throws IOException
+            public void m1() throws IOException
             {
             }
 
@@ -191,18 +189,18 @@ class b_rules_for_overriding {
     class rule7 {
         // we cant override static method as non static otherewise we will get CE error
 
-        class P {
-            public static void m1() {
+        class Pa1 {
+            static void m1() {
             }
         }
 
-        class c extends p {
-            public void m1() {
+        class c extends Pa1 {
+            public static void m1() {
 
             }
 
 
-            // if we try to do this type of osverriding than we will get CE
+            // if we try to do this type of overriding than we will get CE
 
             class Pa {
                 public void m1() {

@@ -12,7 +12,7 @@ public class A_Data_Abstraction {
     //advantages-
     //1.security.
     //2.enhancement.
-    //3.easyness.
-    //4.maintainens.
+    //3.easiness.
+    //4.maintains.
     
 }

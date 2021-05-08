@@ -7,7 +7,7 @@ public class A_encap
 {
 
     //encapsulation is ADDITION OF 'DATA ABSTRACTION '+'DATA HIDING'
-    //securitiy
-    //DISadv- SLOW EXECUTION overall system perforamnce is going to be down
+    //security
+    //DISadv- SLOW EXECUTION overall system performance is going to be down
 
 }

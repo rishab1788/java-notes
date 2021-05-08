@@ -6,10 +6,10 @@ package g_method_signature;
 public class G_method_signature {
 
 
-    //method signature contains only method name followed by agrument names or types.
+    //method signature contains only method name followed by argument names or types.
    //  example -> .
-    public static int m1(int ,float);
-    public  static int m2(String );
+    public static int m1(int a,float b);
+    public  static int m2(String c);
     //method signature -> m1(int ,float)  m2(String)
 
    // return type is important signature in java

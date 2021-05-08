@@ -5,6 +5,7 @@ package m_accessmodifier;
  */
 
 public class A_AccessModifierIntro {
+
 // There are two types of modifiers in Java: access modifiers and non-access modifiers.
 /**
  The access modifiers in Java specifies the accessibility or scope of a field, method, constructor, or class.
@@ -51,7 +52,7 @@ Java Access Modifiers with Class Member -
  (iii). Java Access Modifiers – protected keyword
  If class member is “protected” then it will be accessible only to the classes in the same package and to the subclasses.
  This modifier is less restricted from private but more restricted from public access.
- Usually, we use this keyword to make sure the class variables are accessible only to the subclasses.
+ Usually, we use this  keyword to make sure the class variables are accessible only to the subclasses.
 
  (iv). Java Access Modifiers – default access
  If a class member does not have any access modifier specified, then it’s treated with default access.
@@ -63,13 +64,19 @@ Interview Questions
 
     Q. Which access specifier can be used with a class?
     -  Public and Default access specifiers can be used with a class.
+       No, we cannot declare a top-level class as private or protected. It can be either public or default (no modifier).
+       If it does not have a modifier, it is supposed to have a default access.
+
     Q.Can we declare a top-level class as private?
     -   No, we cannot declare a top-level or outer class as private. It can have either “public” or no modifier.
+
     Q.Can we declare an abstract method as private?
     -   No, an abstract method cannot be private. They must be declared as public, protected or
         default so that they can be further modified.
     Q.What is the access modifier for enumeration?
     - Enumeration members are always public. No other access modifiers are allowed.
+
+
  **/
 
 

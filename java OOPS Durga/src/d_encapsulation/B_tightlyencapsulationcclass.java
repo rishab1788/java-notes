@@ -5,7 +5,7 @@ package d_encapsulation;
  */
 public class B_tightlyencapsulationcclass
 {
-    /* TIGHTLEY ENCAPSULATED CLASS
+    /* TIGHTLY ENCAPSULATED CLASS
     public  class ACCount
     {
         private int balance;
@@ -20,8 +20,7 @@ public class B_tightlyencapsulationcclass
     public  class A
     {
         private int balance;
-
-    }
+}
 
     tightly encapsulated
 

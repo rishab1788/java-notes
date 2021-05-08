@@ -5,10 +5,11 @@ package e_isArealatioShip;
  */
 public class Intrafaces {
 
-    //an itnraface can extends any number of classes simulatenously
+    //an itnraface can extends any number of classes simultaneously
 
-//why ambiguity problem is not  there in a interface because interface doesnot have the implementaion right we implement via classes
-//we cant get any inhritance.
+//why ambiguity problem is not  there in a interface because interface doesn't have the implementation right we implement
+// via classes
+//we cant get any inheritance.
 
 
 }

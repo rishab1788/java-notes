@@ -11,17 +11,19 @@ public class MultipleInheritence {
 
     //people can make you fool by saying object class ko to class krti h extend fir agr ek ar class ko krega to multi ple hojyega;;
 
-    //aisa ni hota h phle obejectclass->A->B smje its not like ki   objectclass,A->B
+    // Aisa ni hota h phle obejectclass->A->B smje its not like ki   objectclass,A->B
 }
 
 
 //CODE
 
-class A
+class D
 {}
-class  B{}
+class E{
 
-class C extends A,B //class cant extend multiple classes at a time COMPILE TIME ERROR.
+        }
+
+class F extends D, E //class cant extend multiple classes at a time COMPILE TIME ERROR.
 {
 
 }

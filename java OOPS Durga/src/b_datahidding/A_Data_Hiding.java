@@ -6,10 +6,10 @@ package b_datahidding;
 public class A_Data_Hiding
 {
 
-    //outside member can't acess data directly is nothing but data hiding
-    //after identification and validation outside person can acess out internal data
-    //example -username password acess gmail info
- //data member  should have private acess specifier
+    //outside member can't access data directly is nothing but data hiding
+    //after identification and validation outside person can access out internal data
+    //example -username password access gmail info
+ //data member  should have private access specifier
 
 
 
